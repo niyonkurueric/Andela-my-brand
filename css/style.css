@@ -1,0 +1,186 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: 'Poppins', sans-serif;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+
+
+ /* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  background-color:#1F2235;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+  margin-left: 45px;
+   color: #FE4A57;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 15px;
+  font-weight: bold;
+ }
+ .menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+
+
+
+ /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:teal;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#4c9e9e;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ }
+
+
+ /* welcome text */
+
+ .welcome
+ {
+   background-color: #1F2235;
+   width:inherit;
+   height: auto;
+ display: flex;
+   flex-wrap:wrap;
+   padding: 0px 132px;
+
+
+ }
+ .welcometext
+ {
+  padding-left: 60px;
+   /* background-color: lightblue; */
+   width: 500px;
+
+   height: auto;
+ }
+ #text{
+   margin-top: 60%;
+
+ }
+ b{
+   color: #FE4A57;
+   font-size: 30px;
+ }
+ .profile
+ {
+  width: 500px;
+   /* background-color: lightcoral; */
+   height: auto;
+   text-align: center;
+ }
+img
+{
+
+  width: 400px;
+  height: 800px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+label
+{
+  color: #fff;
+  display: block;
+}
+h1{
+  color: #fff;
+  padding: 20px 0px;
+}
+button
+{
+  color: #fff;
+   background-color:#FE4A57;
+   width: 150px;
+   height: 40px;
+   box-shadow: 2px;
+   border-radius: 10px;
+   padding: 10px;
+   border: none;
+}
+.service
+{
+  width: inherit;
+  height: 770px;
+  background-color: lawngreen;
+}
+center{
+  font-size: 30px;
+  padding-top: 50px;
+}
+.servicetext
+{
+  background-color: #1F2235;
+   width:inherit;
+   height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px 110px;
+}
+.servicetext div{
+  width: 30%;
+  height: 100px;
+  border: 2px green solid;
+}
+footer
+{
+  background-color: #1F2235;
+  color: #fff;
+  font-size: 16px;
+}
