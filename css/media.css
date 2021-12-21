@@ -54,7 +54,29 @@ input[type=checkbox]{
       margin: 0px;
      
   
-    }}
+    }
+    .contact
+{
+  margin-left: 10px;
+}
+    .contact #butcontact
+    {
+      display: block;
+      margin-left: 100px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    
+    .contact textarea
+{
+
+width: inherit;
+height: 40px;
+margin: 0px;
+background-color: #1F2235; 
+}
+  
+  }
     @media (max-width: 430px) {
   
       .welcome{ 
@@ -62,7 +84,9 @@ input[type=checkbox]{
       width:450px;
       align-items: center;
       
-      }}
+      }
+      
+    }
       @media (max-width: 320px) {
   
         .welcome{ 
@@ -70,4 +94,26 @@ input[type=checkbox]{
         width:430px;
         align-items: center;
         
-        }}
+        }
+        .service
+{
+  width:120%;
+  height: auto;
+  margin-left: 20px;
+
+}
+.blog
+{
+  width:120%;
+  height: auto;
+  margin-left: 20px;
+
+}
+.protoforiol
+{
+  width:120%;
+  height: auto;
+  margin-left: 1px;
+
+}     
+      }
