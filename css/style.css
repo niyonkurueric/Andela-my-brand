@@ -44,6 +44,7 @@
   font-size: 32px;
   margin-left: 130px;
   align-items: center;
+  margin-top: 50px;
  }
  /* NAVBAR MENU */
  .menu {
@@ -175,6 +176,7 @@ footer
   background-color: #1F2235;
   color: #fff;
   font-size: 16px;
+  padding: 30px;
 }
 
 /* start service */
@@ -317,12 +319,12 @@ transition: all 0.5s ease-out;
  margin: -10px;
  height: 300px;
 }
+
 .contact
 {
-margin-top: 100px;
-  width: 100%;
+  width: 90%;
   height: auto;
-  /* background-color: aqua; */
+  background-color: #1F2235;
 }
 .contact .headcontact
 {
@@ -331,44 +333,34 @@ margin-top: 100px;
   padding: 20px;
   color: #fff;
 }
-.contact .content 
+.containt
 {
-  display: flex;
-  flex-wrap: wrap;
-justify-content: space-around;
-  /* background-color: blue; */
-  padding: 1px 50px;
-
-
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 1px 50px; 
 }
-.contact .content section{
-  border: none;
-  box-shadow: none;
-}
-.contact .content section input{
-  border: 1px solid #fff;
-  box-shadow: none;
-  width: 400px;
-  height: 50px;
-  background-color: #1F2235; 
+.containt input
+{
+  width: 300px;
+  height: 40px;
   padding: 10px;
-  color: #fff;
-  font-size: 18px;
-
+  background-color: #1F2235;
+  border: 1px solid white;
+  color: white;
 }
-.contact textarea
+textarea
 {
-margin-left: 120px;
-width: 1000px;
-height: 40px;
-background-color: #1F2235; 
-color: white;
-padding-left: 10px;
-}
-.contact #butcontact
-{
-  display: block;
-  margin-left: 600px;
   margin-top: 10px;
-  align-items: center;
+  width: 1210px;
+  height:80px;
+  background-color: #1F2235;
+border: 1px solid white;
+color: white;
+}
+#BU button{
+  margin-left: 500px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
 }

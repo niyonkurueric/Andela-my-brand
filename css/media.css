@@ -55,6 +55,12 @@ input[type=checkbox]{
      
   
     }
+    textarea
+{
+margin-left: 1px;
+width: 10px;
+height: 150px;
+}
     .contact
 {
   margin-left: 10px;
@@ -67,14 +73,17 @@ input[type=checkbox]{
       align-items: center;
     }
     
-    .contact textarea
-{
-
-width: inherit;
-height: 40px;
-margin: 0px;
-background-color: #1F2235; 
-}
+    textarea
+    {
+      margin-top: 10px;
+      width: 300px;
+      height:80px;
+      background-color: #1F2235;
+    border: 1px solid white;
+    color: white;
+    }
+  
+    
   
   }
     @media (max-width: 430px) {
@@ -94,6 +103,13 @@ background-color: #1F2235;
         width:430px;
         align-items: center;
         
+        }
+        #BU button{
+          margin-left: 100px;
+          font-size: 20px;
+          font-weight: bold;
+          width: 200px;
+          
         }
         .service
 {
