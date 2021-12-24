@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css1/style.css">
+
     <title>Admins</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!-- <link href="css/queries.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="icons/themify-icons.css">
 </head>
 
 
@@ -20,19 +26,11 @@
             <!-- menu button -->
                <div class="menu">
                  <div class="hamburger">
-                 <!-- <i class="fas fa-bars">&#9776;</i> -->
+                  <i class="fas fa-bars">&#9776;</i>
                  </div>
                 
                  <ul>
-                    <img src="../../image/eric12.jpeg">
-                        <li>
-                    <li>
-                        <a href="#">
-                      <span class="icon"><i class="fa fa-bell"></i></span>
-                      <span class="text">Notification</span>
-                        </a>
-                        </li>
-                        <li>
+                   <li>
                             <a href="../login.html">
                           <span class="icon"><i class="fa fa-sign-out"></i></span>
                           <span class="text">Logout</span>
@@ -48,151 +46,226 @@
             <div class="sidebar_inner">
                 <ul>
                     <li>
-                    <a href="#">
+                    <a href="index.html">
                   <span class="icon"><i class="fa fa-qrcode"></i></span>
-                  <span class="text">Home</span>
+                  <span class="text">Dashboard</span>
                     </a>
                     </li>
               
                     <li>
-                    <a href="#">
+                        <a href="create_blog.html">
                   <span class="icon"><i class="fa fa-id-card"></i></span>
-                  <span class="text">CONTACT</span>
+                  <span class="text">Create blog</span>
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                        <a href="queries.html">
                   <span class="icon"><i class="fa fa-certificate "></i></span>
-                  <span class="text">BLOG</span>
+                  <span class="text">Queries</span>
                  
                     </a>
                     </li>
                     <li>
-                    <a href="#">
+                        <a href="profile.html">
                   <span class="icon"><i class="fa fa-book"></i></span>
-                  <span class="text">PROJECT</span>
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#">
-                  <span class="icon"><i class="fa fa-file-word-o "></i></span>
-                  <span class="text">SERVICE</span>
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#">
-                  <span class="icon"><i class="fa fa-address-book "></i></span>
-                  <span class="text">ABOUT</span>
+                  <span class="text">Profile</span>
                     </a>
                     </li>
                 </ul>
               </div>
-
         </div>
         
         </div>
 
-        <div class="main">
-            <div class="contactmessage">
-            <h4>Contact Message</h4>
-            <div class="contactcard">
-                <section>
-                    <h3>Nkundineza olivier</h3>
-                    <br>
-                    <label>niyonkuru@gmail.com</label>
-                    <p>“I’m happy for you!” is another warm, enthusiastic message to add to a congratulations card. 
-                        It’s hard to go wrong telling someone you’re happy about what they’ve achieved.
-                    </p>
-                    
-                    <i class="fa fa-reply"></i>
-                    <i class="fa fa-trash-o"></i>
+        <!-- <div class="main"> -->
+            <main>
+                <section class="admin-dashboard">
+                    <div class="dashboard-summary">
+                        <div class="icon-card icon-card__primary">
+                            <span class="ti-heart icon-card__icon"></span>
+                            <div class="icon-card__details">
+                                <h4 class="icon-card__number">142</h4>
+                                <span class="icon-card__text">Blogs Likes</span>
+                            </div>
+                        </div>
+                        <div class="icon-card icon-card__secondary">
+                            <span class="ti-eye icon-card__icon"></span>
+                            <div class="icon-card__details">
+                                <h4 class="icon-card__number">769</h4>
+                                <span class="icon-card__text">Blogs Views</span>
+                            </div>
+                        </div>
+                        <div class="icon-card icon-card__success">
+                            <span class="ti-comment-alt icon-card__icon"></span>
+                            <div class="icon-card__details">
+                                <h4 class="icon-card__number">24</h4>
+                                <span class="icon-card__text">Comments</span>
+                            </div>
+                        </div>
+                        <div class="icon-card icon-card__blue">
+                            <span class="ti-envelope icon-card__icon"></span>
+                            <div class="icon-card__details">
+                                <h4 class="icon-card__number">20</h4>
+                                <span class="icon-card__text">Contacts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="dashboard-title">8 Blog articles</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/istockphoto-1300972574-170667a.jpg" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/head.webp" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/head1.jpg" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/head3.jpg" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/images.jpeg" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a class="card-img" href="edit_blog.html"><img src="img/head1.jpg" alt="Image"></a>
+                            <div class="card-details">
+                                <a href="edit_blog.html" class="card-title">
+                                    Lorem ipsum dolor sit amet.
+                                </a>
+                            </div>
+                            <div class="card-icons">
+                                <div class="icon">
+                                    <i class="ti-heart"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-comment"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="ti-eye"></i>
+                                    <span class="icon-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section>
-                    <h3>Nkundineza olivier</h3>
-                    <br>
-                    <label>niyonkuru@gmail.com</label>
-                    <p>“I’m happy for you!” is another warm, enthusiastic message to add to a congratulations card. 
-                        It’s hard to go wrong telling someone you’re happy about what they’ve achieved.
-                    </p>
-                    <i class="fa fa-reply"></i>
-                    <i class="fa fa-trash-o"></i>
-                </section>
-
-                <section>
-                    <h3>Nkundineza olivier</h3>
-                    <br>
-                    <label>niyonkuru@gmail.com</label>
-                    <p>“I’m happy for you!” is another warm, enthusiastic message to add to a congratulations card. 
-                        It’s hard to go wrong telling someone you’re happy about what they’ve achieved.
-                    </p>
-                    
-                    <i class="fa fa-reply"></i>
-                    <i class="fa fa-trash-o"></i>
-                </section>
-                <section>
-                    <h3>Nkundineza olivier</h3>
-                    <br>
-                    <label>niyonkuru@gmail.com</label>
-                    <p>“I’m happy for you!” is another warm, enthusiastic message to add to a congratulations card. 
-                        It’s hard to go wrong telling someone you’re happy about what they’ve achieved.
-                    </p>
-                    <i class="fa fa-reply"></i>
-                    <i class="fa fa-trash-o"></i>
-                </section>
-
-            </div>
-            </div>
-            <div class="add">
-                <h4 style="text-align: center; padding: 10px;">Add a new address</h4>
-
-                <div class="addressscard">
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-                    <section>
-                        Name: Niyonkuru Eric
-                    </section>
-                    <section>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-trash-o"></i>
-                    </section>
-            </div>
+            </main>
         </div>
              
 
-
-        <!-- <script src="js/js.js"></script> -->
+        <footer class="footer">
+            <p class="footer-details">
+                Copyright &copy;Niyonkuru Eric 2021
+            </p>
+            <div class="footer__icons">
+                <a href="#" class="footer__icons__link">
+                    <span class="ti-facebook"></span>
+                </a>
+                <a href="#" class="footer__icons__link">
+                    <span class="ti-instagram"></span>
+                </a>
+                <a href="#" class="footer__icons__link">
+                    <span class="ti-linkedin"></span>
+                </a>
+            </div>
+        </footer>
+    <script src="js1/js.js"></script>
 </body>
 </html>

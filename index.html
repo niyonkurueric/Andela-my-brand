@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <title>My Brand</title> 
   <link rel="stylesheet" type="text/css"href="css/media.css">
+  <link rel="stylesheet" type="text/css"href="css/contact.css">
  </head>
  <body>
    <header id="head">
@@ -24,8 +25,8 @@
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#service">SERVICE</a></li>
         <li><a href="#protoforiol">PROTOFORIO</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="#contact-me">CONTACT</a></li>
         <li><a href="login/login.html">LOGIN</a></li>
        </div>
      </ul>
@@ -37,12 +38,6 @@
          <h1>   I Am Web Designer And Web Developer</h1>
        <label>  I'm a Web Developer with extensive experience for over 5 years. 
         My expertise is to create and Websites design, graphic design and many more...</label>
-      <!-- <div class="socialmedia"><i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-youtube"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-yahoo"></i>
-      </div> -->
       </div>
       </div>
       <div class="profile">
@@ -68,7 +63,7 @@
         <label>Tel:+250789822600</label>
         <label>Adrees:Rwanda/kigali/kicukiro</label>
         <br>
-        <button>Dawnload CV</button>
+      
     
     </div>
     </div>
@@ -136,51 +131,52 @@
       </div>
   </section>
   <!-- end protoforiol -->
-  <!-- starting My blog -->
-  <section class="blog" id="blog">
-    <div class="headblog">MY <b><u>BLOG</u></b></div>
-         <div class="content">
-           <section>
-            <img src="image/images.jpeg"> 
-             <h4>Make Your Website</h4>
-             <h6><font>May 30, 2021</font>Design</h6>
-             <p>Scalable, high performant, secure back-ends with modern and trusted technologies.
-              A responsive design makes your website accessible to all users, regardless of their device.
-             </p>
-          </section>
-          <section>
-            <img src="image/images.jpeg"> 
-             <h4>Make Your Website</h4>
-             <h6><font>May 30, 2021</font>Design</h6>
-             <p>Scalable, high performant, secure back-ends with modern and trusted technologies.
-              A responsive design makes your website accessible to all users, regardless of their device.
-             </p>
-          </section> 
-          <section>
-            <img src="image/images.jpeg"> 
-             <h4>Make Your Website</h4>
-             <h6><font>May 30, 2021</font>Design</h6>
-             <p>Scalable, high performant, secure back-ends with modern and trusted technologies.
-              A responsive design makes your website accessible to all users, regardless of their device.
-             </p>
-          </section>
-         </div>
-  </section>
-
-  <!-- end blog -->
+ 
 <!-- start contact us -->
-<section class="contact" id="contact">
-  <div class="headcontact"><h2>CONTACT<b><u>US</u></b></h2></div>
-  <div class="containt">
-    <section><input type="text" name="name" placeholder="Name"></section>
-    <section><input type="email" name="Email" placeholder="Email"></section>
-    <section><input type="text" name="subject" placeholder="subject"></section>
-    <section><textarea name="Message" rows="10"  placeholder="Your Message"></textarea></section>
-  </div>
-  <section id="BU"><button type='submit'>Send Message</button></section>
-</section>
 
+<section id="contact-me" class="section-contact">
+  <h2 class="contact-title">Contact Me</h2>
+  <form class="contact-form" id="contact_form">
+      <div class="alert alert-success"></div>
+      <div class="form-row">
+          <div class="form-group w-1/2">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" id="name" class="form-input"/>
+              <span class="text-invalid" id="name_invalid"></span>
+          </div>
+          <div class="form-group w-1/2">
+              <label class="form-label">Email</label>
+              <input type="text" id="email" class="form-input"/>
+              <span class="text-invalid" id="email_invalid"></span>
+          </div>
+      </div>
+      <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea name="" class="form-input" id="message" cols="30" rows="7"></textarea>
+          <span class="text-invalid" id="message_invalid"></span>
+          <!--            <textarea class="form-input"></textarea>-->
+      </div>
+      <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </div>
+  </form>
+</section>
 <!-- end contact -->
- <footer><center>CopyRight © 2021 Eric| All Rights Reserved</center></footer>
+<footer class="footer">
+  <p class="footer-details">
+      Copyright &copy; Niyonkuru Eric
+  </p>
+  <div class="footer__icons">
+      <a href="#" class="footer__icons__link">
+          <span class="ti-facebook"></span>
+      </a>
+      <a href="#" class="footer__icons__link">
+          <span class="ti-instagram"></span>
+      </a>
+      <a href="#" class="footer__icons__link">
+          <span class="ti-linkedin"></span>
+      </a>
+  </div>
+</footer>
  </body>
 </html>
