@@ -88,10 +88,20 @@
     .profile {
         width: 70%;
     }
-
+    .main
+    {
+        padding: 9rem;
+        height: auto;
+    }
 
 }
+@media only screen and (min-width: 56.25em) {
+    #logout
+    {
+        display: none;
+    }
 
+}
 /*
     End of 1200px media query
 */
@@ -122,102 +132,6 @@
         padding: 4rem 2rem;
     }
 
-    .nav {
-        display: none;
-    }
-
-    .nav-item {
-        display: block;
-    }
-
-    .nav-item {
-        margin-bottom: 1rem;
-    }
-
-    .nav-item a,
-    .nav-item a:link,
-    .nav-item a:visited {
-        letter-spacing: 2px;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-
-    .navigation {
-        position: relative;
-        margin-bottom: -1px;
-    }
-
-    .mobile-nav-btn {
-        display: block;
-        position: fixed;
-        top: 1rem;
-        right: 3rem;
-        background-color: #fff;
-        width: 5rem;
-        height: 5rem;
-        z-index: 2000;
-        border-radius: 50%;
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        text-align: center;
-    }
-
-    .mobile-nav-bg {
-        display: block;
-        width: 4rem;
-        height: 4rem;
-        position: fixed;
-        border-radius: 50%;
-        background-image: radial-gradient(var(--primary-color-light), var(--primary-color-dark));
-        top: 1.2rem;
-        right: 3.5rem;
-        z-index: 1000;
-        transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-    }
-
-    .mobile-nav {
-        display: block;
-        z-index: 1500;
-        width: 0;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    }
-
-    .mobile-nav-list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 100%;
-    }
-
-    .nav_checkbox:checked ~ .mobile-nav-bg {
-        transform: scale(80);
-    }
-
-    .nav_checkbox:checked ~ .mobile-nav {
-        opacity: 1;
-        width: 100%;
-    }
-
-    .nav_checkbox:checked + .mobile-nav-btn .nav-icon {
-        background-color: transparent
-    }
-
-    .nav_checkbox:checked + .mobile-nav-btn .nav-icon::before {
-        top: 0;
-        transform: rotate(135deg)
-    }
-
-    .nav_checkbox:checked + .mobile-nav-btn .nav-icon::after {
-        top: 0;
-        transform: rotate(-135deg)
-    }
 
     .landing-header {
         position: relative;
@@ -320,6 +234,15 @@
     .profile-image__container{
         margin-top: -4rem;
     }
+    .main
+    {
+        padding: 9rem;
+        height: auto;
+    }
+    #logout
+    {
+        display: none;
+    }
 
 }
 
@@ -337,8 +260,14 @@
         max-height: 15rem;
         max-width: 30rem;
     }
+    .section-profile
+    {
+    width: 30rem;
+    }
+    
     .queries-section {
         padding: 0 2rem;
+        width: 30rem;
     }
     .admin-dashboard {
         padding: 3rem 2rem;
@@ -401,5 +330,28 @@
     {
         padding-top: 12rem;
     }
+
+    .main
+    {
+        padding: 10rem;
+        height: auto;
+       
+    }
+  .create-article
+  {
+      width: 30rem;
+  }
+  .footer
+  {
+      display: none;
+  }
+  .logout1{
+    display: none;
+  }
+  #logout
+    {
+        display:block;
+    }
+  
 
 }
