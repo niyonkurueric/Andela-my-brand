@@ -104,6 +104,11 @@
     main{
         padding-top: 1rem;
     }
+    #main
+    {
+        padding-top: 12rem;
+    }
+
     .admin-dashboard {
         padding: 3rem 4rem;
     }
@@ -390,6 +395,11 @@
     }
     .profile-image__container{
         margin-top: -4rem;
+    }
+
+    #main
+    {
+        padding-top: 12rem;
     }
 
 }

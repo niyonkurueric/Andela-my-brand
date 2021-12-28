@@ -1,31 +1,35 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="admin/css/main.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
     <title>Login</title>
-    <link rel="stylesheet" href="loginstyle.css">
 </head>
-<body>
-   <main>
-         <div class="image"><img src="../image/logo project.png"></div>
-         <div>
-            <input type="email" name="email" required placeholder="Email">
-            <input type="password" name="password" required placeholder="Password">
-            <a href="admin/index.html">
-   <input type="submit" name="login" value="LOGIN" 
-   style=" background-color: aqua; border: 1px solid green; border-radius: 10px; cursor: pointer;">
-</a>
-            <a href="signup.html"><button>Signup</button></a> <button>Forgot password</button>
-            <div>
-               <i class="fa fa-facebook" style="font-size:30px;color:rgb(4, 0, 255); cursor: pointer;"></i>
-               <i class="fa fa-google" style="font-size:30px;color:rgb(11, 94, 4); cursor: pointer;"></i>
-               <i class="fa fa-github" style="font-size:30px;color:rgb(28, 28, 29); cursor: pointer;"></i>
-            </div>
-            
-         </div>
-   </main>
+<body class="login-page">
+<div class="login-container">
+    <label class="login-form loader-container">
+        <div id="container-loader">
+            <div class="lds-ripple"><div></div><div></div></div>
+        </div>
+        <div class="form-group">
+            <input class="form-input" type="email" placeholder="Email"/>
+        </div>
+        <div class="form-group">
+            <input class="form-input" type="password" id="password" placeholder="Password"/>
+        </div>
+        <div class="form-group">
+            <a href="admin/index.html" class="not-registered__link"> <button class="btn btn-primary btn-block loader-block">
+                Login
+            </button></a>
+        </div>
+        <div class="not-registered">
+            <span class="not-registered__text">An Administrator? </span>
+            <a href="../index.html" class="not-registered__link">Back to home</a>
+        </div>
+    </label>
+</div>
 </body>
 </html>

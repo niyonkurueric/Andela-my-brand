@@ -112,8 +112,11 @@ body {
     float: right;
 }
 main{
-    padding-top: 6rem;
-    
+    padding-top: 6rem;  
+}
+#main
+{
+    padding-top: 1rem;
 }
 .shadow{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
