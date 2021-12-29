@@ -11,6 +11,37 @@ input[type=checkbox]{
    }
    /* APPLYING MEDIA QUERIES */
    @media (max-width: 768px) {
+
+    img
+{
+
+  width: 200px;
+  height: 500px;
+ 
+ 
+}
+.welcome
+ {
+   /* background-color: #1F2235; */
+   width:80%;
+   height: auto;
+ display: flex;
+   flex-wrap:wrap;
+
+
+ }
+ main{
+   width: 90%;
+ }
+
+ .welcometext
+ {
+  padding-left: 10px;
+   /* background-color: lightblue; */
+   width: 300px;
+
+   height: auto;
+ }
   
    .menu { 
     display:none;
