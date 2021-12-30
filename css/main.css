@@ -2,8 +2,8 @@
     BASE
 */
 :root {
-    --primary-color: #f210c1;
-    --primary-color-light: #ec4cec;
+    --primary-color: #FE4A57;
+    --primary-color-light: #FE4A57;
     --primary-color-dark: #510bc4;
     --color-yellow: #f3c000;
     --color-yellow-light: #ffd227;
@@ -16,7 +16,7 @@
     --color-grey-dark-2: #a0aec0;
     --color-grey-dark-3: #1a202c;
     --color-danger: #e53e3e;
-    --linear-background: linear-gradient(to bottom, #664cec, #510bc4);
+    --linear-background: linear-gradient(to bottom, #FE4A57, #FE4A57);
 }
 
 *,
@@ -160,7 +160,10 @@ main{
 #loader_img {
     display: none;
 }
-
+.form-input
+{
+    color: white;
+}
 .form-input.invalid {
     border-bottom: solid 3px var(--color-danger);
 }
@@ -278,11 +281,9 @@ button{
 }
 
 .landing-header {
-    /*background: var(--linear-background);*/
-    background-color: var(--primary-color);
+   
+    background-color: #1a202c;
     height: 90vh;
-    /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
-    clip-path: ellipse(150% 100% at 50% 0%);
 }
 
 .header-details {
@@ -293,8 +294,8 @@ button{
 }
 
 .header-content {
-    width: 40%;
-    text-align: center;
+    width: 50%;
+    text-align: justify;
 
 }
 
@@ -410,6 +411,7 @@ button{
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
 }
+
 
 .service {
     text-align: center;
@@ -594,7 +596,26 @@ button{
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     overflow: hidden;
+    text-align: justify;
 }
+
+.card i{  
+    background-color: #1a202c; 
+    border: 1px solid #FE4A57;
+    font-size: 40px;
+    color: #FE4A57;
+    
+}
+.card i:hover{  
+   
+    color: #bbb6b6;
+   
+    background-color: #FE4A57;
+    
+}
+
+
+
 
 .card-img img {
     width: 100%;

@@ -112,7 +112,8 @@
         font-size: 50%;
     }
     main{
-        padding-top: 1rem;
+        padding-top: 10rem;
+        width: 85rem;
     }
     #main
     {
@@ -264,13 +265,18 @@
     {
     width: 30rem;
     }
+    main{
+        padding-top: 10rem;
+        width: 30rem;
+    }
     
     .queries-section {
         padding: 0 2rem;
-        width: 30rem;
+        width: 35rem;
     }
     .admin-dashboard {
         padding: 3rem 2rem;
+        width: 40rem;
     }
     .about-section {
         padding: -6rem 2rem 2rem 2rem;
