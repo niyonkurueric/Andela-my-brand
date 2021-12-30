@@ -19,7 +19,9 @@
     }
 
     .header-title {
+
         font-size: 2rem;
+
     }
 
     .articles {
@@ -240,6 +242,7 @@
 
     .articles {
         padding: 2rem 1rem;
+
     }
 
     .breadcrumb {
@@ -347,6 +350,7 @@
     }
 
     .header-title {
+
         font-size: 1rem;
     }
 

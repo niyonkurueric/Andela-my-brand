@@ -14,7 +14,6 @@ li_items.forEach((li_item)=>{
  li_items.forEach((li_item)=>{
     li_item.addEventListener("mouseleave", ()=>{
       main.style.paddingLeft="10rem";
-     
  
      li_item.closest(".wrapper").classList.add("hover_collapse");
  
@@ -23,5 +22,6 @@ li_items.forEach((li_item)=>{
 
  hamburger.addEventListener("click", () => {
    main.style.paddingLeft="25rem";
+
     hamburger.closest(".wrapper").classList.toggle("hover_collapse");
 })
