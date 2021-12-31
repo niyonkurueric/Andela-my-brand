@@ -93,6 +93,11 @@
         padding: 9rem;
         height: auto;
     }
+    .main1
+    {
+        padding: 10rem;
+        height: auto;
+    }
 
 }
 @media only screen and (min-width: 56.25em) {
@@ -240,6 +245,11 @@
         padding: 9rem;
         height: auto;
     }
+    .main1
+    {
+        padding: 10rem 10rem 10rem 13rem;
+        height: auto;
+    }
     #logout
     {
         display: none;
@@ -340,6 +350,12 @@
     .main
     {
         padding: 10rem;
+        height: auto;
+       
+    }
+    .main1
+    {
+        padding: 10rem 10rem 10rem 13rem;
         height: auto;
        
     }
