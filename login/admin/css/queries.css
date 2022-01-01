@@ -99,6 +99,7 @@
         height: auto;
     }
 
+
 }
 @media only screen and (min-width: 56.25em) {
     #logout
@@ -117,8 +118,10 @@
         font-size: 50%;
     }
     main{
+
         padding-top: 10rem;
         width: 85rem;
+
     }
     #main
     {
@@ -245,11 +248,13 @@
         padding: 9rem;
         height: auto;
     }
+
     .main1
     {
         padding: 10rem 10rem 10rem 13rem;
         height: auto;
     }
+
     #logout
     {
         display: none;
@@ -275,6 +280,7 @@
     {
     width: 30rem;
     }
+
     main{
         padding-top: 10rem;
         width: 30rem;
@@ -287,6 +293,7 @@
     .admin-dashboard {
         padding: 3rem 2rem;
         width: 40rem;
+
     }
     .about-section {
         padding: -6rem 2rem 2rem 2rem;
@@ -353,6 +360,7 @@
         height: auto;
        
     }
+
     .main1
     {
         padding: 10rem 10rem 10rem 13rem;
@@ -362,6 +370,7 @@
   .create-article
   {
       width: 32rem;
+
   }
   .footer
   {
