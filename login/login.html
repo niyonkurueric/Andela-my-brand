@@ -1,5 +1,6 @@
 <!--<!DOCTYPE html>-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,28 +9,38 @@
     <link href="login.css" rel="stylesheet">
     <title>Login</title>
 </head>
+
 <body class="login-page">
-<div class="login-container">
-    <label class="login-form loader-container">
-        <div id="container-loader">
-            <div class="lds-ripple"><div></div><div></div></div>
-        </div>
-        <div class="form-group">
-            <input class="form-input" type="email" placeholder="Email"/>
-        </div>
-        <div class="form-group">
-            <input class="form-input" type="password" id="password" placeholder="Password"/>
-        </div>
-        <div class="form-group">
-            <a href="admin/index.html" class="not-registered__link"> <button class="btn btn-primary btn-block loader-block">
+    <div class="login-container">
+        <form class="login-form loader-container" onsubmit="login(event)">
+            <div id="container-loader">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-input" type="text" placeholder="Email" id="email" />
+                <span class="text-invalid" id="email_invalid">invalid Email</span>
+            </div>
+            <div class="form-group">
+                <input class="form-input" type="password" id="password" placeholder="Password" />
+                <span class="text-invalid" id="password_invalid">invalid password</span>
+            </div>
+            <span class="text-invalid" id="invalid">Sorry, wrong email or password!</span>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block loader-block" id="login_btn">
                 Login
-            </button></a>
-        </div>
-        <div class="not-registered">
-            <span class="not-registered__text">An Administrator? </span>
-            <a href="../index.html" class="not-registered__link">Back to home</a>
-        </div>
-    </label>
-</div>
+            </button>
+            </div>
+            <div class="not-registered">
+                <span class="not-registered__text">An Administrator? </span>
+                <a href="../index.html" class="not-registered__link">Back to home</a>
+            </div>
+
+        </form>
+    </div>
+    <script type="text/javascript" src="js/validation/login.js"></script>
 </body>
+
 </html>
