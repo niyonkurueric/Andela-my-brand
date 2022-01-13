@@ -28,14 +28,23 @@ function login(event) {
     if (checkPassword(passwordInput.value) && check_email(emailInput.value)) {
         passwordInput.style.border = "solid 1px #cbd5e0";
         emailInput.style.border = "solid 1px #cbd5e0";
+        if (localStorage.getItem("userInfo")) {
+            const user = JSON.parse(localStorage.getItem("userInfo"));
+            if (user.email == emailInput.value && user.password == passwordInput.value) {
+                window.location.replace("http://127.0.0.1:5500/login/admin/index.html");
+            }
+        } else {
+            const obj = {
+                email: emailInput.value,
+                password: passwordInput.value,
+                islogin: true
+            }
 
-        const obj = {
-            email: emailInput.value,
-            password: passwordInput.value
-
+            localStorage.setItem("userInfo", JSON.stringify(obj));
+            window.location.replace("http://127.0.0.1:5500/login/admin/index.html");
         }
-        localStorage.setItem("userInfo", JSON.stringify(obj));
-        window.location.replace("http://127.0.0.1:5500/login/admin/index.html");
+
+
 
     }
 }

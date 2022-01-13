@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 
 <head>
@@ -15,6 +17,11 @@
     <link href="css/admin.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/themify-icons.css">
+    <script>
+        if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
+            window.location.assign("http://127.0.0.1:5500/login/login.html");
+        }
+    </script>
 </head>
 
 
@@ -31,9 +38,9 @@
                     <i class="fas fa-bars">&#9776;</i>
                 </div>
 
-                <ul class="logout1">
+                <ul class="logout1" id="logout1">
                     <li>
-                        <a href="../login.html" style="color:#fff; font-size: 18px;">
+                        <a href="#" style="color:#fff; font-size: 18px;">
                             <span class="fa fa-sign-out"><i></i></span>
                             <span class="text">Logout</span>
                         </a>
@@ -73,8 +80,8 @@
                             <span class="text">Profile</span>
                         </a>
                     </li>
-                    <li id="logout" onclick="logout(log)">
-                        <a href="../login.html">
+                    <li id="logout">
+                        <a href="#">
                             <span class="fa fa-sign-out"><i></i></span>
                             <span class="text">logout</span>
                         </a>
