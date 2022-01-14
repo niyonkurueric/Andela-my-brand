@@ -91,7 +91,7 @@
 
             <section class="create-article">
                 <div class="card article-form">
-                    <form action="" class="form" id="blog_form">
+                    <form class="form" id="blog_form" onsubmit="ceatBlog(event)">
                         <h2 class="dashboard-title">Create new blog</h2>
                         <div class="alert alert-danger">
 
@@ -101,15 +101,18 @@
                         </div>
                         <div class="form-group">
                             <label for="title" class="form-label">Title</label>
-                            <input type="text" class="form-input" id="title" required/>
+                            <input type="text" class="form-input" id="title" required />
+                            <span class="text-invalid" id="title_invalid">invalid Title</span>
                         </div>
                         <div class="form-group">
                             <label for="image">Blog Image</label>
                             <input type="file" class="form-input" id="image" placeholder="Image URL" required/>
+                            <span class="text-invalid" id="image_invalid">invalid image</span>
                         </div>
                         <div class="form-group">
                             <label for="body" class="form-label">Blog content</label>
                             <textarea name="" id="body" cols="30" rows="10" class="form-input" required></textarea>
+                            <span class="text-invalid" id="body_invalid">invalid body</span>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary" type="submit" id="submit">Create a blog</button>
@@ -137,7 +140,7 @@
                 </a>
             </div>
         </footer>
-
+        <script src="/login/js/validation/CreatBlog.js"></script>
         <script src="/login/js/validation/logout.js"></script>
 </body>
 
