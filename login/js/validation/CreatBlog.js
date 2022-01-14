@@ -1,45 +1,45 @@
- document.querySelector("#image").addEventListener("change", function() {
-     const reader = new FileReader();
-     reader.readAsDataURL(this.files[0]);
-     reader.addEventListener("load", () => {
-         console.log(reader.result);
-     })
- });
+//  document.querySelector("#image").addEventListener("change", function() {
+//      const reader = new FileReader();
+//      reader.readAsDataURL(this.files[0]);
+//      reader.addEventListener("load", () => {
+//          console.log(reader.result);
+//      })
+//  });
 
- function ceatBlog(event) {
-     event.preventDefault();
-     var title = document.getElementById("title");
-     var image = document.getElementById("image");
-     var message = document.getElementById("body");
-     1
+function ceatBlog(event) {
+    event.preventDefault();
+    var title = document.getElementById("title");
+    var image = document.getElementById("image");
+    var message = document.getElementById("body");
 
 
-     var image_invalid = document.getElementById("image_invalid");
 
-     var title_invalid = document.getElementById("title_invalid");
-     var blog_invalid = document.getElementById("body");
+    var image_invalid = document.getElementById("image_invalid");
 
-     if (title.value == "" && message.value == "" && image.value == "") {
-         title.style.border = "solid 1px red";
-         image.style.border = "solid 1px red";
-         message.style.border = "solid 1px red";
+    var title_invalid = document.getElementById("title_invalid");
+    var blog_invalid = document.getElementById("body");
 
-         image_invalid.style.display = "block";
-         blog_invalid.style.display = "block";
-         title_invalid.style.display = "block";
+    if (title.value == "" && message.value == "" && image.value == "") {
+        title.style.border = "solid 1px red";
+        image.style.border = "solid 1px red";
+        message.style.border = "solid 1px red";
 
-     } else {
+        image_invalid.style.display = "block";
+        blog_invalid.style.display = "block";
+        title_invalid.style.display = "block";
 
-         var obj = {
-             Title: title.value,
-             message: message.value,
-             image: image.value,
-             islogin: "blog"
-         }
-         console.log(obj.Title);
-         console.log(obj.message);
-         console.log(obj.image);
-         localStorage.setItem(obj.Title, JSON.stringify(obj));
-     }
+    } else {
 
- }
+        var obj = {
+            Title: title.value,
+            message: message.value,
+            image: image.value,
+            islogin: "blog"
+        }
+        console.log(obj.Title);
+        console.log(obj.message);
+        console.log(obj.image);
+        localStorage.setItem(obj.Title, JSON.stringify(obj));
+    }
+
+}
