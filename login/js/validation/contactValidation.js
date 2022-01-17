@@ -25,18 +25,20 @@ function Contact(event) {
         var obj = {
             Name: fname.value,
             Email: email.value,
-            Message: message.value,
-            islogin: false
+            Message: message.value
         }
-        console.log(obj.Name);
-        console.log(obj.Email);
-        console.log(obj.Message);
+        let queries = localStorage.getItem("queries");
+        if (queries) {
 
-        localStorage.setItem(obj.Name, JSON.stringify(obj));
+            var convert = JSON.parse(queries);
+            convert.push(obj);
+            localStorage.setItem("queries", JSON.stringify(convert));
 
+        } else {
+            var queryarray = [obj];
+            localStorage.setItem("queries", JSON.stringify(queryarray));
+        }
     }
-
-
 }
 
 function check_email(email) {

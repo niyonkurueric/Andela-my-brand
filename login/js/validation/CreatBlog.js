@@ -1,45 +1,58 @@
-//  document.querySelector("#image").addEventListener("change", function() {
-//      const reader = new FileReader();
-//      reader.readAsDataURL(this.files[0]);
-//      reader.addEventListener("load", () => {
-//          console.log(reader.result);
-//      })
-//  });
+ console.log("eric");
 
-function ceatBlog(event) {
-    event.preventDefault();
-    var title = document.getElementById("title");
-    var image = document.getElementById("image");
-    var message = document.getElementById("body");
+ var url;
+ document.querySelector("#image").addEventListener("change", function() {
+     const image = new FileReader();
+     image.readAsDataURL(this.files[0]);
+     image.addEventListener("load", () => {
+         url = image.result;
+
+     })
+ });
+
+ function ceatBlog(event) {
+     event.preventDefault();
+     var title = document.getElementById("title");
+     var image = document.getElementById("image");
+     var message = document.getElementById("body");
 
 
 
-    var image_invalid = document.getElementById("image_invalid");
+     var image_invalid = document.getElementById("image_invalid");
 
-    var title_invalid = document.getElementById("title_invalid");
-    var blog_invalid = document.getElementById("body");
+     var title_invalid = document.getElementById("title_invalid");
+     var blog_invalid = document.getElementById("body");
 
-    if (title.value == "" && message.value == "" && image.value == "") {
-        title.style.border = "solid 1px red";
-        image.style.border = "solid 1px red";
-        message.style.border = "solid 1px red";
+     if (title.value == "" && message.value == "" && image.value == "") {
+         title.style.border = "solid 1px red";
+         image.style.border = "solid 1px red";
+         message.style.border = "solid 1px red";
 
-        image_invalid.style.display = "block";
-        blog_invalid.style.display = "block";
-        title_invalid.style.display = "block";
+         image_invalid.style.display = "block";
+         blog_invalid.style.display = "block";
+         title_invalid.style.display = "block";
 
-    } else {
+     } else {
 
-        var obj = {
-            Title: title.value,
-            message: message.value,
-            image: image.value,
-            islogin: "blog"
-        }
-        console.log(obj.Title);
-        console.log(obj.message);
-        console.log(obj.image);
-        localStorage.setItem(obj.Title, JSON.stringify(obj));
-    }
+         var obj = {
+             Title: title.value,
+             message: message.value,
+             image: url,
+             comments: [],
+             like: []
 
-}
+         }
+         let bloges = localStorage.getItem("blog");
+         if (bloges) {
+             var converBlog = JSON.parse(bloges);
+             converBlog.push(obj);
+             localStorage.setItem("blog", JSON.stringify(converBlog));
+         } else {
+             var blogArray = [obj];
+             localStorage.setItem("blog", JSON.stringify(blogArray));
+             console.log(blogArray);
+         }
+
+     }
+
+ }

@@ -9,7 +9,7 @@ console.log(informations);
 function view(info, idx) {
     let div = document.createElement('div');
     div.innerHTML = `<div class="card">
- <a class="card-img" href="edit_blog.html?id=${idx}"><img src="${info.image}" alt="Image"></a>
+ <a class="card-img" href="blog_details.html?id=${idx}"><img src="${info.image}" alt="Image"></a>
  <div class="card-details">
  <a href="blog_details.html" class="card-title">${info.Title}</a> 
  <div class="card-icons"> <div class="icon">
