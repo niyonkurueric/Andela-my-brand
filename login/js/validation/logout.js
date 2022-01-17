@@ -3,7 +3,7 @@ logout.addEventListener("click", () => {
     const logout = JSON.parse(localStorage.getItem("userInfo"));
     logout.islogin = false;
     localStorage.setItem("userInfo", JSON.stringify(logout));
-    window.location.href = "login/login.html";
+    window.location.href = "../login.html";
 })
 
 
@@ -12,5 +12,5 @@ logout1.addEventListener("click", () => {
     const logout = JSON.parse(localStorage.getItem("userInfo"));
     logout1.islogin = false;
     localStorage.setItem("userInfo", JSON.stringify(logout1));
-    window.location.href = "login/login.html";
+    window.location.href = "../login.html";
 })

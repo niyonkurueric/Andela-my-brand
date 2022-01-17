@@ -40,7 +40,6 @@ function Contact(event) {
 
         }
     }
-    window.location.reload();
 }
 
 function check_email(email) {
