@@ -37,8 +37,10 @@ function Contact(event) {
         } else {
             var queryarray = [obj];
             localStorage.setItem("queries", JSON.stringify(queryarray));
+
         }
     }
+    window.location.reload();
 }
 
 function check_email(email) {

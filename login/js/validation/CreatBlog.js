@@ -39,7 +39,7 @@
              message: message.value,
              image: url,
              comments: [],
-             like: []
+             like: 0
 
          }
          let bloges = localStorage.getItem("blog");

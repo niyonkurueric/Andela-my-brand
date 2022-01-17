@@ -13,8 +13,12 @@ function view(info, idx) {
  <div class="card-details">
  <a href="blog_details.html" class="card-title">${info.Title}</a> 
  <div class="card-icons"> <div class="icon">
- <i class="ti-heart"></i><span class="icon-number">0</span></div><div class="icon">
-  <i class="ti-comment"></i><span class="icon-number">0</span></div> <div class = "icon" >
+ <i class="ti-heart">${info.likes}</i>
+ <span class="icon-number">0</span>
+ </div><div class="icon">
+  <i class="ti-comment"></i>
+  <span class="icon-number">0</span>
+  </div> <div class = "icon" >
   <i class = "ti-eye" > </i> <span class= "icon-number"> 0 </span> </div> </div></div> 
   </div>`;
 

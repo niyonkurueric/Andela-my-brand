@@ -5,8 +5,7 @@ let rightBlog = document.querySelector(".recommended-list");
 const getblog = JSON.parse(localStorage.getItem("blog")).sort().reverse();
 var Readmessage = getblog[id];
 
-Blog.innerHTML = `
-        
+Blog.innerHTML = `     
         <img src="${Readmessage.image}" class="article-image" />
             <div class="article-content">
                 <h2 class="article-title">
@@ -17,11 +16,12 @@ Blog.innerHTML = `
                 </p>
                 <div class="article-icon">
                     <div class="icon">
-                        <span class="ti-heart icon-article"></span>
-                        <span class="icon-number">12</span>
+                        <span class="ti-heart icon-article" onclick="like(event)"></span>
+                        <span class="icon-number">${Readmessage.like}</span>
                     </div>
                 </div>
                 <div class="article-comments">
+                   <h3 class="comments-title">Comments</h3>
                    
                     </div>
                     <form class="comment-form" onsubmit="commet(event)">
@@ -39,6 +39,7 @@ Blog.innerHTML = `
                     </form>
                 </div>
             </div>
+            
         `;
 console.log(Readmessage.comments);
 let BlogComment = document.querySelector(".article-comments");
@@ -50,7 +51,6 @@ Readmessage.comments.forEach((comment) => {
     let div = document.createElement('div');
 
     div.innerHTML = `
-<h3 class="comments-title">5 Comments</h3>
 <div class="comments">
     <div class="comment">
         <h3 class="comment-name">${comment.Name}</h3>
@@ -103,6 +103,15 @@ function commet(event) {
     })
     var pushex = JSON.stringify(bloges);
     localStorage.setItem("blog", pushex);
+    window.location.reload();
 
+}
 
+function like(event) {
+    event.preventDefault();
+    var a = Readmessage.like += 1;
+    console.log(a);
+    getblog[id] = Readmessage;
+    localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
+    window.location.reload();
 }
