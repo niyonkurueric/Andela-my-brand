@@ -34,6 +34,8 @@ function login(event) {
             password_invalid.innerHTML = "enter collect authentication";
             if (user.email == emailInput.value && user.password == passwordInput.value) {
                 window.location.href = "admin/index.html";
+            } else {
+                alert("Please Enter Valid credentials");
             }
         } else {
             const obj = {

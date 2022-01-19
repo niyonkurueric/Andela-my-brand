@@ -47,10 +47,14 @@
              var converBlog = JSON.parse(bloges);
              converBlog.push(obj);
              localStorage.setItem("blog", JSON.stringify(converBlog));
+             alert("created well");
+             window.location.reload();
          } else {
              var blogArray = [obj];
              localStorage.setItem("blog", JSON.stringify(blogArray));
              console.log(blogArray);
+             alert("created well");
+             window.location.reload();
          }
 
      }

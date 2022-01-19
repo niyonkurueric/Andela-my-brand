@@ -78,14 +78,8 @@ function update(event) {
     var title = document.getElementById("Title").value;
     var image = document.getElementById("image").value;
     var content = document.getElementById("message").value;
-    var update = {
-        "Title": title,
-        "image": url,
-        "message": content,
-        "comments": [],
-        "like": 0
-    };
-    getblog[id] = update;
+    alert("do you want to update");
+    getblog[id] = {...getblog[id], Title: title, image: url, message: content }
     localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
 }
 
@@ -93,8 +87,12 @@ function deleteone(event) {
     event.preventDefault();
     getblog[id];
     console.log(getblog.splice(id, 1));
-    console.log(getblog);
-    localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
-    window.location.reload();
+    if (getblog.splice(id, 1)) {
+        alert("do you want to delete");
+        localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
+        window.location.reload();
+
+    }
+
 
 }

@@ -26,5 +26,4 @@ function view(info, idx) {
 }
 informations.forEach((message, idx) => {
     view(message, idx);
-
 })
