@@ -46,7 +46,7 @@
              var converBlog = JSON.parse(bloges);
              converBlog.push(obj);
              localStorage.setItem("blog", JSON.stringify(converBlog));
-             alert("created well");
+             alert("do you want to creat blog");
              window.location.href = "index.html";
          } else {
              var blogArray = [obj];
