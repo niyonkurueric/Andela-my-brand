@@ -13,14 +13,20 @@ function display(doc) {
     let p = document.createElement('p');
 
     let span = document.createElement('span');
+    let times = document.createElement('span');
+    let loca = document.createElement('span');
 
     h4.textContent = doc.Name;
     p.textContent = doc.Message;
     span.textContent = doc.Email;
+    times.textContent = moment(doc.timestamp).fromNow();
+    loca.textContent = (doc.city);
 
     div.appendChild(h4)
     div.appendChild(p)
     div.appendChild(span)
+    div.appendChild(times)
+    div.appendChild(loca)
 
     queryCollection.appendChild(div)
 }

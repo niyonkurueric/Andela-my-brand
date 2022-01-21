@@ -1,5 +1,8 @@
+var obj = {};
+
 function Contact(event) {
     event.preventDefault();
+
     var fname = document.getElementById("name");
     var email = document.getElementById("email");
     var message = document.getElementById("message");
@@ -22,11 +25,14 @@ function Contact(event) {
         email_invalid.style.display = "block";
 
     } else {
-        var obj = {
+
+        obj = {...obj,
             Name: fname.value,
             Email: email.value,
-            Message: message.value
+            Message: message.value,
+            timestamp: Date.now()
         }
+
         let queries = localStorage.getItem("queries");
         if (queries) {
 
@@ -39,6 +45,8 @@ function Contact(event) {
             localStorage.setItem("queries", JSON.stringify(queryarray));
 
         }
+
+
     }
 }
 
@@ -50,4 +58,23 @@ function check_email(email) {
         return false;
     }
     return true;
+}
+
+function showPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    const locationAPI = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=13f33db6084847fcae6bf192cff57501`
+    fetch(locationAPI)
+        .then(response => response.json())
+        .then(data => {
+            var resultlocation = data.results[0].formatted;
+            obj = {...obj, city: resultlocation }
+
+        })
+}
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+
+} else {
+    console.log("Geolocation is not supported by this browser.");
 }
