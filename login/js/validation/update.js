@@ -18,11 +18,11 @@ div.innerHTML = `
                     </div>
                     <div class="form-group">
                         <label for="title" class="form-label">Title</label>
-                        <input type="text" id="Title" class="form-input" value=" ${message.Title}"required/>
+                        <input type="text" id="Title" class="form-input" value=" ${message.Title}"/>
                     </div>
                     <div class="form-group">
                         <label for="image">Blog Image</label>
-                        <input type="file" id="image"  class="form-input" placeholder="Image URL" required/>
+                        <input type="file" id="image"  class="form-input" placeholder="Image URL"/>
                         <img src="${message.image}" class="article-image" />
                     </div>
                     <div class="form-group">
@@ -81,6 +81,7 @@ function update(event) {
     alert("do you want to update");
     getblog[id] = {...getblog[id], Title: title, image: url, message: content }
     localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
+    window.location.href = "index.html";
 }
 
 function deleteone(event) {
@@ -90,7 +91,7 @@ function deleteone(event) {
     if (getblog.splice(id, 1)) {
         alert("do you want to delete");
         localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
-        window.location.reload();
+        window.location.href = "index.html";
 
     }
 

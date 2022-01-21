@@ -15,6 +15,11 @@
     <link href="css/admin.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/themify-icons.css">
+    <script>
+        if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
+            window.location.assign("http://127.0.0.1:5500/login/login.html");
+        }
+    </script>
 </head>
 
 

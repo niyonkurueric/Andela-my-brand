@@ -48,13 +48,13 @@
              converBlog.push(obj);
              localStorage.setItem("blog", JSON.stringify(converBlog));
              alert("created well");
-             window.location.reload();
+             window.location.href = "index.html";
          } else {
              var blogArray = [obj];
              localStorage.setItem("blog", JSON.stringify(blogArray));
              console.log(blogArray);
              alert("created well");
-             window.location.reload();
+             window.location.href = "index.html";
          }
 
      }
