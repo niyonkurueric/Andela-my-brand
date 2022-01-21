@@ -4,6 +4,7 @@ let BlogEdity = document.querySelector("#blog_form");
 let rightBlog = document.querySelector(".recommended-list");
 const getblog = JSON.parse(localStorage.getItem("blog")).sort().reverse();
 let message = getblog[id];
+console.log(message);
 var url;
 
 let div = document.createElement('div');
@@ -23,7 +24,8 @@ div.innerHTML = `
                     <div class="form-group">
                         <label for="image">Blog Image</label>
                         <input type="file" id="image"  class="form-input" placeholder="Image URL"/>
-                        <img src="${message.image}" class="article-image" />
+                       
+                   <img src="${message.image}" class="article-image" />
                     </div>
                     <div class="form-group">
                         <label for="body" class="form-label">Blog content</label>
@@ -37,8 +39,7 @@ div.innerHTML = `
                         <span class="icon-number">${message.like}</span>
                     </div>
                     <div class="icon">
-                        <span class="ti-eye icon-article"></span>
-                        <span class="icon-number">30</span>
+                        
                     </div>
         `;
 BlogEdity.appendChild(div);
@@ -75,19 +76,29 @@ document.querySelector("#image").addEventListener("change", function() {
 
 function update(event) {
     event.preventDefault();
+
+    let image1 = message.image;
     var title = document.getElementById("Title").value;
     var image = document.getElementById("image").value;
     var content = document.getElementById("message").value;
-    alert("do you want to update");
-    getblog[id] = {...getblog[id], Title: title, image: url, message: content }
+    if (image) {
+        getblog[id] = {...getblog[id], Title: title, image: url, message: content }
+        localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
+        alert("do you want to update");
+        window.location.href = "index.html";
+
+    }
+    getblog[id] = {...getblog[id], Title: title, message: content }
     localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
+    alert("do you want to update");
     window.location.href = "index.html";
+
 }
 
 function deleteone(event) {
     event.preventDefault();
     getblog[id];
-    console.log(getblog.splice(id, 1));
+    console.log(getblog.splice(id, 0));
     if (getblog.splice(id, 1)) {
         alert("do you want to delete");
         localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));

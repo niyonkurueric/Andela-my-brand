@@ -15,6 +15,11 @@
     <link href="css/admin.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/themify-icons.css">
+    <script>
+        if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
+            window.location.assign("../login.html");
+        }
+    </script>
 </head>
 
 
@@ -114,7 +119,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="/login/js/validation/Queries.js"></script>
     <script src="js1/js.js"></script>
-
+    <script src="/login/js/validation/logout.js"></script>
+    <script src="/login/js/validation/viewBlog.js"></script>
 </body>
 
 </html>

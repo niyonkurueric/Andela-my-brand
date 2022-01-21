@@ -11,15 +11,12 @@ function view(info, idx) {
     div.innerHTML = `<div class="card">
  <a class="card-img" href="blog_details.html?id=${idx}"><img src="${info.image}" alt="Image"></a>
  <div class="card-details">
- <a href="blog_details.html" class="card-title">${info.Title}</a> 
+ <a href="blog_details.html?id=${idx}" class="card-title">${info.Title}</a> 
  <div class="card-icons"> <div class="icon">
  <i class="ti-heart"></i>
  <span class="icon-number">${info.like}</span>
  </div><div class="icon">
-  <i class="ti-comment"></i>
-  <span class="icon-number">0</span>
-  </div> <div class = "icon" >
-  <i class = "ti-eye" > </i> <span class= "icon-number"> 0 </span> </div> </div></div> 
+  
   </div>`;
 
     cards.appendChild(div);

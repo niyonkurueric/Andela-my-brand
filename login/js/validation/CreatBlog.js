@@ -33,7 +33,6 @@
          title_invalid.style.display = "block";
 
      } else {
-
          var obj = {
              Title: title.value,
              message: message.value,

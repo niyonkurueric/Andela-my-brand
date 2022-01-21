@@ -3,8 +3,9 @@ var id = urlParams.get("id");
 let Blog = document.querySelector(".article-details");
 let rightBlog = document.querySelector(".recommended-list");
 const getblog = JSON.parse(localStorage.getItem("blog")).sort().reverse();
+let check = localStorage.getItem("blog");
 var Readmessage = getblog[id];
-
+console.log("this is check" + check[id])
 Blog.innerHTML = `     
         <img src="${Readmessage.image}" class="article-image" />
             <div class="article-content">
@@ -41,12 +42,10 @@ Blog.innerHTML = `
             </div>
             
         `;
-console.log(Readmessage.comments);
 let BlogComment = document.querySelector(".article-comments");
 let div = document.createElement('div');
 
 Readmessage.comments.forEach((comment) => {
-    console.log(Readmessage.comments);
     let BlogComment = document.querySelector(".article-comments");
     let div = document.createElement('div');
 
@@ -96,8 +95,6 @@ function commet(event) {
             }
             Element.comments.push(Commentobj);
 
-            console.log(Element);
-
         }
 
     })
@@ -110,7 +107,7 @@ function commet(event) {
 function like(event) {
     event.preventDefault();
     var a = Readmessage.like += 1;
-    console.log(a);
+
     getblog[id] = Readmessage;
     localStorage.setItem("blog", JSON.stringify(getblog.sort().reverse()));
     window.location.reload();
