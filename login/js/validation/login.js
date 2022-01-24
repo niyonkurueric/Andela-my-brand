@@ -32,8 +32,12 @@ function login(event) {
         if (localStorage.getItem("userInfo")) {
             const user = JSON.parse(localStorage.getItem("userInfo"));
             password_invalid.innerHTML = "enter collect authentication";
-            if (user.email == emailInput.value && user.password == passwordInput.value) {
+            if (user.email === emailInput.value && user.password === passwordInput.value) {
+                const login = JSON.parse(localStorage.getItem("userInfo"));
+                login.islogin = true;
+                localStorage.setItem("userInfo", JSON.stringify(login));
                 window.location.href = "admin/index.html";
+
             } else {
                 alert("Please Enter Valid credentials");
             }
@@ -45,11 +49,8 @@ function login(event) {
             }
 
             localStorage.setItem("userInfo", JSON.stringify(obj));
-
             window.location.href = "admin/index.html";
         }
-
-
 
     }
 }

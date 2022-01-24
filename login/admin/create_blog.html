@@ -15,11 +15,6 @@
     <link href="css/admin.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link rel="stylesheet" href="icons/themify-icons.css">
-    <script>
-        if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
-            window.location.assign("http://127.0.0.1:5500/login/login.html");
-        }
-    </script>
 </head>
 
 <body>
@@ -144,8 +139,21 @@
                 </a>
             </div>
         </footer>
-        <script src="/login/js/validation/CreatBlog.js"></script>
-        <script src="/login/js/validation/logout.js"></script>
+        <script>
+            if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
+                window.location.assign("http://127.0.0.1:5500/login/login.html");
+            }
+            userInfo = JSON.parse(localStorage.getItem("userInfo"));
+            let logok = document.querySelector(".logo");
+            console.log(logok)
+            if (userInfo.FirstName) {
+                logok.innerHTML = userInfo.FirstName;
+            } else {
+                logok.innerHTML = " Niyonkuru Eric";
+            }
+        </script>
+        <script src="/login/js/validation/CreatBlog.js">
+        </script>
         <script src="/login/js/validation/logout.js"></script>
         <script src="/login/js/validation/viewBlog.js"></script>
 </body>

@@ -39,10 +39,14 @@ function Contact(event) {
             var convert = JSON.parse(queries);
             convert.push(obj);
             localStorage.setItem("queries", JSON.stringify(convert));
+            alert("well send message");
+            window.location.reload();
 
         } else {
             var queryarray = [obj];
             localStorage.setItem("queries", JSON.stringify(queryarray));
+            alert("well send message");
+            window.location.reload();
 
         }
 
